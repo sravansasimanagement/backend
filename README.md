@@ -31,6 +31,10 @@ cd your-repository
 
 ### Unit Test
 
+test/java/com.example.rak/controller/UsersControllerTest
+
+test/java/com.example.rak/service/UsersServiceTest
+
 
 ### Build the Application
 mvn clean install
