@@ -29,6 +29,12 @@ git clone https://github.com/sravansasi24/rak-backend-app.git
 
 cd your-repository
 
+### Unit Test Files
+ test/java/com.example.rak/controller/UserControllerTest
+
+ test/java/com.example.rak/service/UserServiceTest
+
+
 ### Build the Application
 mvn clean install
 
