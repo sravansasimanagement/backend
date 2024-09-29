@@ -39,13 +39,6 @@ public class UsersService {
         });
     }
 
-//    public Optional<Users> updateUserPassword(Long id, String newPassword) {
-//        return usersRepository.findById(id).map(user -> {
-//            user.setPassword(passwordEncoder.encode(newPassword));
-//            return usersRepository.save(user);
-//        });
-//    }
-
     public Optional<Users> updateUserPassword(Long id, String newPassword) {
         return Optional.ofNullable(usersRepository.findById(id).map(user -> {
             user.setPassword(passwordEncoder.encode(newPassword));

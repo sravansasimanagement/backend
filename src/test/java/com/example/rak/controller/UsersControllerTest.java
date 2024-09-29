@@ -39,7 +39,6 @@ class UsersControllerTest {
     @Test
     void testCreateUser() {
         when(userService.createUser(any(Users.class))).thenReturn(user);
-
         ResponseEntity<Users> response = userController.createUsers(user);
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
         assertNotNull(response.getBody());
@@ -49,9 +48,7 @@ class UsersControllerTest {
     @Test
     void testGetUserById() {
         when(userService.getUserById(1L)).thenReturn(Optional.of(user));
-
         ResponseEntity<Users> response = userController.getUserById(1L);
-
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertEquals(user.getId(), response.getBody().getId());
@@ -60,20 +57,15 @@ class UsersControllerTest {
     @Test
     void testGetUserById_NotFound() {
         when(userService.getUserById(1L)).thenReturn(Optional.empty());
-
         ResponseEntity<Users> response = userController.getUserById(1L);
-
         assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
         assertNull(response.getBody());
     }
 
     @Test
     void testDeleteUser() {
-        // Adjust this based on the actual return type of deleteUserById
         when(userService.deleteUserById(1L)).thenReturn(true);
-
         ResponseEntity<Void> response = userController.deleteUser(1L);
-
         assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
     }
 
@@ -81,9 +73,7 @@ class UsersControllerTest {
     @Test
     void testChangePassword_Success() {
         when(userService.updateUserPassword(1L, "newPassword123")).thenReturn(Optional.of(user));
-
         ResponseEntity<Users> response = userController.updateUserPassword(1L, "newPassword123");
-
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
     }
