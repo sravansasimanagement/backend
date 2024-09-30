@@ -29,10 +29,10 @@ git clone https://github.com/sravansasi24/rak-backend-app.git
 
 cd your-repository
 
-### Unit Test 
- test/java/com.example.rak/controller/UserControllerTest
+### Unit Test
+command : mvn test
 
- test/java/com.example.rak/service/UserServiceTest
+![image](https://github.com/user-attachments/assets/10604aa8-4e67-45f2-bfdd-e1eab341c8e2)
 
 
 ### Build the Application
@@ -40,6 +40,9 @@ mvn clean install
 
 ### Run the Application
 mvn spring-boot:run
+
+### Post Man Collection 
+File name : RakBackEndAPI.postman_collection.json
 
 ### ccess the Swagger UI
 Navigate to http://localhost:8080/swagger-ui.html to interact with the API documentation.
