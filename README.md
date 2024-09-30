@@ -42,6 +42,9 @@ mvn clean install
 ### Run the Application
 mvn spring-boot:run
 
+### Run the Application
+File name : RakBackEndAPI.postman_collection.json
+
 ### ccess the Swagger UI
 Navigate to http://localhost:8080/swagger-ui.html to interact with the API documentation.
 
