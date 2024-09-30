@@ -30,10 +30,9 @@ git clone https://github.com/sravansasi24/rak-backend-app.git
 cd your-repository
 
 ### Unit Test
+command : mvn test
 
-test/java/com.example.rak/controller/UsersControllerTest
-
-test/java/com.example.rak/service/UsersServiceTest
+![image](https://github.com/user-attachments/assets/10604aa8-4e67-45f2-bfdd-e1eab341c8e2)
 
 
 ### Build the Application
