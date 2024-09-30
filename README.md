@@ -1,4 +1,4 @@
-# rak-backend-app
+# backend
 # Overview
 This project is a Spring Boot application designed to manage user accounts with a focus on RESTful APIs. The application follows an API First design approach using Swagger specifications, hashes passwords before storing them in the database, and employs comprehensive input validation. It uses an H2 in-memory database for simplicity and includes automated Swagger documentation.
 # Features
@@ -28,6 +28,12 @@ Maven
 git clone https://github.com/sravansasi24/rak-backend-app.git
 
 cd your-repository
+
+### Unit Test 
+ test/java/com.example.rak/controller/UserControllerTest
+
+ test/java/com.example.rak/service/UserServiceTest
+
 
 ### Build the Application
 mvn clean install
