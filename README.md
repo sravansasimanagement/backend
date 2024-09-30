@@ -42,7 +42,7 @@ mvn clean install
 ### Run the Application
 mvn spring-boot:run
 
-### Run the Application
+### Post Man Collection 
 File name : RakBackEndAPI.postman_collection.json
 
 ### ccess the Swagger UI
